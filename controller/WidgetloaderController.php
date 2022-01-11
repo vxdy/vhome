@@ -4,8 +4,11 @@ namespace controller;
 
 class WidgetloaderController
 {
-    public function verarbeiteDaten()
+    public function verarbeiteDaten(): void
     {
-        include_once("widgets/widget-door-sensor.php");
+        if (isset($_GET['widget'])) {
+            $strPath = "widgets/".$_GET['widget'].".php";
+            include_once($strPath);
+        }
     }
 }

@@ -4,11 +4,11 @@ $(document).ready(function(){
 
 setInterval(function () {
     updateDoor()
-}, 15000);
+}, 5000);
 
 
 function updateDoor(){
     $(".load-widget-door-sensor").each(function (intIndex, objElement) {
-        $(objElement).load("Widgetloader")
+        $(objElement).load("Widgetloader?widget=widget-door-sensor")
     })
 }
