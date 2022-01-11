@@ -1,0 +1,16 @@
+.overview .setting {
+  background-color: #3d3d41;
+  cursor: pointer;
+  margin: 11px 0;
+  text-align: center;
+  height: 25vh;
+  font-size: 35px;
+  font-family: "Bebas Neue", serif;
+  color: #e7e9eb;
+  box-shadow: 0 0 12px #bb05ba;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+}
+
+/*# sourceMappingURL=overview.css.map */

@@ -1,0 +1,11 @@
+.device {
+  font-size: 20px;
+  color: white;
+}
+.device .infobar {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #5a5a5a;
+}
+
+/*# sourceMappingURL=device.css.map */

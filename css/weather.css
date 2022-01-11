@@ -1,0 +1,36 @@
+.weather {
+    background-color: #3d3d41;
+    border-radius: 5px;
+    height: 530px;
+}
+
+.weather-city {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.weather-infos {
+    text-align: center;
+    color: white;
+    display: flex;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.weather-status {
+    font-size: 90px;
+    width: 120px;
+}
+
+.weather-temp {
+    font-size: 50px;
+    width: 100px;
+}
+
+.weather-status2 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rajdhani:wght@400&display=swap");
+.dashboard {
+  color: white;
+  font-family: "Lato", serif;
+  font-size: 22px;
+}
+.dashboard .topnav {
+  margin-bottom: 4px;
+}
+.dashboard .topnav .room-bar {
+  background-color: #3d3d41;
+  border-radius: 5px;
+  padding: 10px 10px 3px 10px;
+  font-size: 15px;
+  margin: 0 0 2px 4px;
+}
+.dashboard .topnav .room-bar .active {
+  border-bottom: 3px solid #5f4590;
+}
+.dashboard .topnav .room-bar .room-name {
+  cursor: pointer;
+  display: inline-block;
+  height: 80%;
+}
+.dashboard .topnav .room-bar .room-name a {
+  margin: 0 12px;
+  height: 100%;
+}
+.dashboard .widget {
+  margin: 10px 5px 0 5px;
+  border-radius: 5px;
+  background-color: #3d3d41;
+  padding: 10px;
+}
+.dashboard .widget .widget-name {
+  font-size: 17px;
+  color: #d4d4d4;
+}
+.dashboard .widget .widget-half-c-loading .ldBar {
+  height: 140px !important;
+}
+.dashboard .widget .widget-half-c-loading .ldBar.label-center > .ldBar-label {
+  text-shadow: none;
+  top: 65%;
+}
+.dashboard .widget .widget-half-c-loading .ldBar-label:after {
+  content: " °C";
+  font-size: 22px;
+}
+.dashboard .widget .widget-half-c-loading .ldBar path.mainline {
+  stroke-width: 7px;
+  stroke: #09f;
+  stroke-linecap: round;
+}
+.dashboard .widget .widget-temp-controll .ldBar {
+  height: 140px !important;
+}
+.dashboard .widget .widget-temp-controll .ldBar.label-center > .ldBar-label {
+  text-shadow: none;
+  top: 65%;
+}
+.dashboard .widget .widget-temp-controll .ldBar-label:after {
+  content: " °C";
+  font-size: 22px;
+}
+.dashboard .widget .widget-temp-controll .ldBar path.mainline {
+  stroke-width: 7px;
+  stroke: #09f;
+  stroke-linecap: round;
+}
+.dashboard .widget .widget-temp-input {
+  text-align: center;
+}
+.dashboard .widget .widget-temp-input input {
+  color: white;
+  font-size: 18px;
+  background-color: #3d3d41;
+  border: 1px solid #a000fd;
+  border-radius: 10px;
+  width: 60%;
+  height: 100%;
+}
+.dashboard .widget .widget-temp-input button {
+  margin-top: 4px;
+  border: 1px solid #a000fd;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  height: 99%;
+}
+.dashboard .widget .widget-door-sensor .sensor-row {
+  margin-top: 3px;
+  font-size: 15px;
+  padding: 0 15px 0 3px;
+}
+.dashboard .widget .widget-door-sensor .sensor-row .sensor-name {
+  width: 50%;
+  display: inline;
+  text-align: left;
+}
+.dashboard .widget .widget-door-sensor .sensor-row .sensor-value {
+  width: 50%;
+  display: inline;
+  float: right;
+}
+.dashboard .widget .widget-weather .i {
+  width: 100%;
+}
+.dashboard .widget .widget-cam .widget-content {
+  position: relative;
+}
+.dashboard .widget .widget-cam .cam-control {
+  background-color: rgba(255, 255, 255, 0.46);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3px;
+}
+.dashboard .widget .widget-cam img {
+  max-width: 100%;
+}
+.dashboard .widget .widget-cam .cam-btn {
+  text-align: center;
+}
+.dashboard .widget .widget-lock .widget-content {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.dashboard .widget .widget-lock .widget-content i {
+  margin-right: 5px;
+}
+.dashboard .widget .widget-lock .widget-content .lock-unlock-btn button {
+  color: white;
+  background: none;
+  border: 2px solid #5f4590;
+  border-radius: 15px;
+}
+.dashboard .widget .widget-air-quality {
+  font-size: 16px;
+}
+.dashboard .widget .widget-air-quality .widget-content {
+  margin-top: 3px;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

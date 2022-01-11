@@ -1,0 +1,199 @@
+@import "main";
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rajdhani:wght@400&display=swap');
+
+
+.dashboard {
+  color: white;
+  font-family: 'Lato', serif;
+  font-size: 22px;
+
+  .topnav {
+
+    margin-bottom: 4px;
+
+    .room-bar {
+      background-color: $widgetColor;
+      border-radius: 5px;
+      padding: 10px 10px 3px 10px;
+      font-size: 15px;
+      margin: 0 0 2px 4px;
+
+      .active {
+        border-bottom: 3px solid #5f4590;
+      }
+
+      .room-name {
+        cursor: pointer;
+        display: inline-block;
+        height: 80%;
+
+        a {
+          margin: 0 12px;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .widget {
+    margin: 10px 5px 0 5px;
+    border-radius: 5px;
+    background-color: $widgetColor;
+    padding: 10px;
+
+    .widget-name {
+      font-size: 17px;
+      color: #d4d4d4;
+    }
+
+    .widget-half-c-loading {
+
+      .ldBar {
+        height: 140px !important;
+      }
+
+      .ldBar.label-center > .ldBar-label {
+        text-shadow: none;
+        top: 65%;
+      }
+
+      .ldBar-label:after {
+        content: " °C";
+        font-size: 22px;
+      }
+
+      .ldBar path.mainline {
+        stroke-width: 7px;
+        stroke: #09f;
+        stroke-linecap: round;
+      }
+    }
+
+    .widget-temp-controll {
+
+      .ldBar {
+        height: 140px !important;
+      }
+
+      .ldBar.label-center > .ldBar-label {
+        text-shadow: none;
+        top: 65%;
+      }
+
+      .ldBar-label:after {
+        content: " °C";
+        font-size: 22px;
+      }
+
+      .ldBar path.mainline {
+        stroke-width: 7px;
+        stroke: #09f;
+        stroke-linecap: round;
+      }
+    }
+
+    .widget-temp-input {
+      text-align: center;
+
+      input {
+        color: white;
+        font-size: 18px;
+        background-color: $widgetColor;
+        border: 1px solid #a000fd;
+        border-radius: 10px;
+        width: 60%;
+        height: 100%;
+      }
+
+      button {
+        margin-top: 4px;
+        border: 1px solid #a000fd;
+        border-radius: 5px;
+        background: none;
+        color: white;
+        height: 99%;
+      }
+    }
+
+    .widget-door-sensor {
+      .sensor-row {
+        margin-top: 3px;
+        font-size: 15px;
+        padding: 0 15px 0 3px;
+
+        .sensor-name {
+          width: 50%;
+          display: inline;
+          text-align: left;
+        }
+
+        .sensor-value {
+          width: 50%;
+          display: inline;
+          float: right;
+        }
+      }
+    }
+
+    .widget-weather {
+      .i {
+        width: 100%;
+      }
+    }
+
+    .widget-cam {
+
+      .widget-content {
+        position: relative;
+      }
+
+      .cam-control {
+        background-color: rgba(255, 255, 255, 0.46);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 3px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .cam-btn {
+        text-align: center;
+      }
+    }
+
+    .widget-lock {
+
+
+      .widget-content {
+        font-size: 18px;
+        margin-top: 5px;
+
+        i {
+          margin-right: 5px;
+        }
+
+        .lock-unlock-btn {
+          button {
+            color: white;
+            background: none;
+            border: 2px solid #5f4590;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+
+    .widget-air-quality {
+      font-size: 16px;
+
+      .widget-content {
+        margin-top: 3px;
+      }
+    }
+
+
+  }
+}

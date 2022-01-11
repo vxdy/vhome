@@ -1,0 +1,19 @@
+{
+    "name": "m.bajtl/steinigke-xml",
+    "autoload": {
+        "psr-4": {
+            "controller\\": "controller"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marco Bajtl",
+            "email": "m.bajtl@schoetex.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "ext-simplexml": "*",
+      "ext-dom": "*"
+    }
+}

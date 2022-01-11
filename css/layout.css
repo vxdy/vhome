@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rajdhani:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  background-color: #303134;
+}
+
+a {
+  color: #e7e9eb;
+  text-decoration: none;
+}
+
+.headline {
+  border-radius: 5px;
+  text-align: center;
+  margin: 11px 0;
+  height: 14vh;
+  font-size: 50px;
+  font-family: "Bebas Neue", serif;
+  color: #e7e9eb;
+  background-color: #3d3d41;
+}
+.headline i {
+  font-size: 18px;
+}
+
+.navbar {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #3d3d41;
+}
+.navbar .clickable-icon {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+}
+.navbar .clickable-icon .active {
+  background-color: #5f4590;
+  border-radius: 10px;
+}
+.navbar .clickable-icon .icon-box {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.navbar .clickable-icon .icon-box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=layout.css.map */
