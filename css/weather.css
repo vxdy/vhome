@@ -1,7 +1,7 @@
 .weather {
     background-color: #3d3d41;
     border-radius: 5px;
-    height: 530px;
+    height: 560px;
 }
 
 .weather-city {
@@ -9,6 +9,7 @@
     text-align: center;
     color: white;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .weather-infos {
@@ -33,4 +34,67 @@
     text-align: center;
     color: white;
     font-size: 25px;
+}
+
+.weather-time {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.weather-details1 {
+    color: #8b8b8d;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.weather-details2 {
+    color: #8b8b8d;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-bottom: 3px solid #5f4590;
+}
+
+.weather-day-head {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.weather-day-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.weather-day-box {
+    border: 2px solid #5f4590;
+    border-radius: 5px;
+    padding:5px 5px 5px 5px;
+}
+
+.box {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.box-left {
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    border-bottom: 2px solid #5f4590;
+    margin-bottom: 5px;
+}
+
+.box-bottom {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 15px;
 }

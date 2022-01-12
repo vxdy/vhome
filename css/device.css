@@ -1,11 +1,82 @@
 .device {
+  position: relative;
+  height: 100%;
   font-size: 20px;
   color: white;
+  border-radius: 5px;
+  background-color: #3d3d41;
+  padding: 20px;
+}
+.device a {
+  cursor: pointer;
 }
 .device .infobar {
   margin-bottom: 15px;
   padding-bottom: 5px;
   border-bottom: 1px solid #5a5a5a;
+}
+.device input {
+  max-width: 100%;
+}
+.device .save-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.device .save-btn button {
+  color: white;
+  padding: 3px;
+  border: 2px solid #5f4590;
+  border-radius: 15px;
+  background: none;
+  width: 150px;
+}
+
+.modal-content {
+  color: white;
+  background-color: #3d3d41;
+}
+.modal-content .modal-header {
+  border-bottom: 1px solid #303134;
+}
+.modal-content .modal-footer {
+  border-top: 1px solid #303134;
+}
+.modal-content .modal-footer .btn-primary {
+  background-color: #5f4590;
+  border-color: #472a80;
+}
+.modal-content .device-form input {
+  width: 60%;
+  color: white;
+  border: 2px solid #5f4590;
+  padding: 3px;
+  border-radius: 5px;
+  background: none;
+}
+.modal-content .device-form input:focus {
+  outline: none;
+}
+.modal-content .device-form select {
+  width: 60%;
+  color: white;
+  border: 2px solid #5f4590;
+  padding: 3px;
+  border-radius: 5px;
+  background: none;
+}
+.modal-content .device-form select option {
+  background-color: #3d3d41;
+  border: 2px solid #5f4590;
+}
+.modal-content .device-form select:focus {
+  outline: none;
+}
+.modal-content .device-form option:focus {
+  outline: none;
+}
+.modal-content .device-form .setting-row {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=device.css.map */

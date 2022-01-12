@@ -15,7 +15,12 @@ $arrDevices = json_decode($json);
                         <i class="fa-duotone fa-cube"></i> <?= $strDeviceName ?>:
                     </div>
                     <div class="sensor-value">
+                        <?php if($strValue->state !== null): ?>
                         <?= $strValue->state ?>
+                        <?php else: ?>
+                        No Con.
+                        <?php endif ?>
+
                     </div>
                 </div>
             <?php endif ?>

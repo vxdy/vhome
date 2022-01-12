@@ -1,10 +1,97 @@
+@import "main";
+
 .device {
+  position: relative;
+  height: 100%;
   font-size: 20px;
   color: white;
+  border-radius: 5px;
+  background-color: $widgetColor;
+  padding: 20px;
+
+  a {
+    cursor: pointer;
+  }
 
   .infobar{
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 1px solid #5a5a5a
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  .save-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    button{
+      color: white;
+      padding: 3px;
+      border: 2px solid #5f4590;
+      border-radius: 15px;
+      background: none;
+      width: 150px;
+    }
+  }
+}
+
+.modal-content{
+  color: white;
+  background-color: $widgetColor;
+
+  .modal-header{
+    border-bottom: 1px solid $mainColor;
+  }
+
+  .modal-footer {
+    border-top: 1px solid $mainColor;
+
+    .btn-primary{
+      background-color: #5f4590;
+      border-color: #472a80;
+    }
+  }
+
+  .device-form {
+    input{
+      width: 60%;
+      color: white;
+      border: 2px solid #5f4590;
+      padding: 3px;
+      border-radius: 5px;
+      background: none;
+    }
+
+    input:focus{
+      outline: none;
+    }
+
+    select {
+      width: 60%;
+      color: white;
+      border: 2px solid #5f4590;
+      padding: 3px;
+      border-radius: 5px;
+      background: none;
+      option {
+        background-color: $widgetColor;
+        border: 2px solid #5f4590;
+      }
+    }
+
+    select:focus{
+      outline: none;
+    }
+    option:focus{
+      outline: none;
+    }
+
+
+    .setting-row {
+      margin-top: 10px;
+    }
   }
 }
