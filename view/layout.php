@@ -11,7 +11,8 @@
     <link rel="icon" type="image/x-icon" href="img/Logo/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vHome | Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
     <link rel="stylesheet" href="css/overview.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -50,49 +51,56 @@
         <div class="col-lg-1 col-2">
             <div class="navbar">
                 <div class="clickable-icon">
-                    <a href="">
-                        <div class="icon-box active"><i class="fa-light fa-grid-horizontal"></i></div>
+                    <a href=".">
+                        <div class="icon-box <?= (ACTIVE === "index") ? "active" : "" ?>"><i
+                                    class="fa-light fa-grid-horizontal"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
-                        <div class="icon-box"><i class="fa-light fa-bolt-lightning"></i></div>
+                        <div class="icon-box" <?= (ACTIVE === "") ? "active" : "" ?>><i
+                                    class="fa-light fa-bolt-lightning"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
-                        <div class="icon-box"><i class="fa-light fa-lightbulb"></i></div>
+                        <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>"><i
+                                    class="fa-light fa-lightbulb"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
-                        <div class="icon-box"><i class="fa-light fa-camera-cctv"></i></div>
+                        <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>"><i
+                                    class="fa-light fa-camera-cctv"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
-                        <div class="icon-box"><i class="fa-light fa-cube"></i></div>
+                        <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>"><i class="fa-light fa-cube"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="clickable-icon">
+                    <a href="weather">
+                        <div class="icon-box <?= (ACTIVE === "weather") ? "active" : "" ?>"><i
+                                    class="fa-light fa-cloud-bolt-sun"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
-                        <div class="icon-box"><i class="fa-light fa-cloud-bolt-sun"></i></div>
+                        <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>"><i
+                                    class="fa-light fa-volume-high"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
-                        <div class="icon-box"><i class="fa-light fa-volume-high"></i></div>
-                    </a>
-                </div>
-                <div class="clickable-icon">
-                    <a href="">
-                        <div class="icon-box">
+                        <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>">
                             <i class="fa-light fa-chart-candlestick"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
-                    <a href="">
-                        <div class="icon-box">
+                    <a href="devices">
+                        <div class="icon-box <?= (ACTIVE === "devices") ? "active" : "" ?>">
                             <i class="fa-light fa-gear"></i>
                         </div>
                     </a>
@@ -106,7 +114,9 @@
     </div>
 </div>
 <script src="js/utils.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 <script src="js/devices.js"></script>
 </body>
 </html>

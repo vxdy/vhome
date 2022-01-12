@@ -16,16 +16,18 @@ def nanoleaf():
 
 @app.route('/api/door', methods=['GET'])
 def door():
-    strDeviceName = "door1"
     if request.args.get("status") != "":
-        print(str(request.args.get("status")))
         intState = request.args.get("status")
+        strDeviceName = request.args.get("devicename")
+        print(str(request.args.get("status")))
+        print(str(strDeviceName))
         with open('conf/device.json', 'r') as file:
             data = json.load(file)
             if intState == "1":
                 data[strDeviceName]["state"] = "Geschlossen"
             elif intState == "0":
                 data[strDeviceName]["state"] = "Offen"
+            data[strDeviceName]["update"] = int(time.time())
 
             with open('conf/device.json', 'w') as jsonfile:
                 json.dump(data, jsonfile)

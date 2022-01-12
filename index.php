@@ -20,10 +20,12 @@ $strControllerName = explode("?", ltrim($strController, '/'))[0];
 if($strControllerName === '')
 {
     $strController = 'IndexController';
+    define("ACTIVE", "index");
 }
 else
 {
     $strController = ucfirst($strControllerName) . 'Controller';
+    define("ACTIVE", $strControllerName);
 }
 
 $strControllerClass = 'controller\\' . $strController;

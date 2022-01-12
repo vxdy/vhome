@@ -10,7 +10,7 @@ class DevicesController
     /**
      * @throws JsonException
      */
-    public function verarbeiteDaten()
+    public function verarbeiteDaten(): void
     {
         if(isset($_POST['device-name'])){
             $objDeviceList = json_decode(file_get_contents("python-api/conf/device.json"), true, 512, JSON_THROW_ON_ERROR);
@@ -18,9 +18,10 @@ class DevicesController
             $objDeviceList[$_POST['device-name']]["id"] = 2;
             $objDeviceList[$_POST['device-name']]["type"] = $_POST['device-type'];
             $objDeviceList[$_POST['device-name']]["state"] = null;
+            $objDeviceList[$_POST['device-name']]["update"] = 0;
 
-            $objFile = fopen('python-api/conf/device.json', 'w');
-            fwrite($objFile, json_encode($objDeviceList));
+            $objFile = fopen('python-api/conf/device.json', 'wb');
+            fwrite($objFile, json_encode($objDeviceList, JSON_THROW_ON_ERROR));
             fclose($objFile);
 
         }

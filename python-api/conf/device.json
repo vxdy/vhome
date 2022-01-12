@@ -1,1 +1,1 @@
-{"door1":{"id":1,"name":"door1","type":"contact-sensor","state":"Geschlossen"},"test2":{"name":"test2","id":2,"type":"contact-sensor","state":null},"Test887":{"name":"Test887","id":2,"type":"contact-sensor","state":null},"lost":{"name":"lost","id":2,"type":"contact-sensor","state":null}}
+{"test": {"name": "test", "id": 2, "type": "contact-sensor", "state": "Geschlossen", "update": 1642029724}, "test2": {"name": "test2", "id": 2, "type": "contact-sensor", "state": null, "update": 0}, "home": {"name": "home", "id": 2, "type": "contact-sensor", "state": null, "update": 0}}
