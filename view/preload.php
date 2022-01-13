@@ -30,9 +30,7 @@
         <div class="col-12 align-self-center">
             <div class="row headline">
                 <div class="col-1 d-none d-md-flex align-items-center justify-content-center">
-                    <div class="status-icon">
-                        <i class="fa-light fa-scrubber"></i>
-                    </div>
+                    <i class="fa-light fa-scrubber"></i>
                 </div>
                 <div class="col-3 d-none d-md-flex align-items-center justify-content-center">
                     <span class="date">01.01.2020</span>
@@ -55,25 +53,25 @@
                 <div class="clickable-icon">
                     <a href=".">
                         <div class="icon-box <?= (ACTIVE === "index") ? "active" : "" ?>"><i
-                                    class="fa-light fa-grid-horizontal"></i></div>
+                                class="fa-light fa-grid-horizontal"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
                         <div class="icon-box" <?= (ACTIVE === "") ? "active" : "" ?>><i
-                                    class="fa-light fa-bolt-lightning"></i></div>
+                                class="fa-light fa-bolt-lightning"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
                         <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>"><i
-                                    class="fa-light fa-lightbulb"></i></div>
+                                class="fa-light fa-lightbulb"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
                         <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>"><i
-                                    class="fa-light fa-camera-cctv"></i></div>
+                                class="fa-light fa-camera-cctv"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
@@ -85,13 +83,13 @@
                 <div class="clickable-icon">
                     <a href="weather">
                         <div class="icon-box <?= (ACTIVE === "weather") ? "active" : "" ?>"><i
-                                    class="fa-light fa-cloud-bolt-sun"></i></div>
+                                class="fa-light fa-cloud-bolt-sun"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
                     <a href="">
                         <div class="icon-box <?= (ACTIVE === "") ? "active" : "" ?>"><i
-                                    class="fa-light fa-volume-high"></i></div>
+                                class="fa-light fa-volume-high"></i></div>
                     </a>
                 </div>
                 <div class="clickable-icon">
@@ -109,9 +107,9 @@
                 </div>
             </div>
         </div>
-
         <div class="col-lg-11 col-sm-10">
-            <?php include_once("view/" . $strFileName) ?>
+            <div id="preload">
+            </div>
         </div>
     </div>
 </div>
@@ -120,6 +118,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 <script src="js/devices.js"></script>
+<script src="js/preload.js"></script>
 </body>
 </html>
 

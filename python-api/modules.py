@@ -1,8 +1,7 @@
-import time
-
-from flask import request
-import requests
 import json
+
+import requests
+from flask import request
 
 strAuthToken = "201UYgpHITQ25oXsd9vEEMhezpDLizhu"
 url = f'http://192.168.178.53:16021/api/v1/{strAuthToken}/state'
@@ -26,7 +25,6 @@ def state():
 
 
 def setcolor():
-
     data = {"hue": {"value": 80}}
 
     headers = {
@@ -38,4 +36,13 @@ def setcolor():
         headers=headers
     )
 
+    return json.dumps({'status': 200})
+
+
+def toggleplug(adress):
+    adress = f"http://{adress}/cm?cmnd=Power%20TOGGLE"
+    requests.put(
+        adress
+    )
+    # TODO Check, what Return of State and give it back
     return json.dumps({'status': 200})

@@ -12,3 +12,4 @@ class WeatherController
         include_once("view/layout.php");
     }
 }
+

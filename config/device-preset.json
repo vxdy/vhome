@@ -1,6 +1,6 @@
 {
   "devices": {
     "contact-sensor": "Kontakt Sensor",
-    "contact2-sensor": "Kontakt Sensor2"
+    "smartplug-tasmota": "Smart Steckdose (Tasmota)"
   }
 }

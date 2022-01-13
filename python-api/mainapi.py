@@ -1,5 +1,5 @@
-from flask import request, Flask
-import json
+from flask import Flask
+
 from modules import *
 
 app = Flask(__name__)
@@ -43,5 +43,19 @@ def device():
         return data
 
 
+@app.route('/api/powerplug', methods=['GET'])
+def powerplug():
+    if request.args.get("toggle") != "" and request.args.get("devicename") != "":
+        with open("conf/device.json", "r") as jsonfile:
+            data = json.load(jsonfile)
+            strState = toggleplug(data[request.args.get("devicename")]["ipadress"])
+            data[request.args.get("devicename")]["state"] = strState
+            with open("conf/device.json", "w") as file:
+                json.dump(file, data)
+
+
 if __name__ == '__main__':
-    app.run(port=8888, debug=True, threaded=True, host="0.0.0.0")
+    try:
+        app.run(port=8888, debug=True, threaded=True, host="0.0.0.0")
+    except Exception as strException:
+        print("Error: " + str(strException))

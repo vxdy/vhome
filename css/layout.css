@@ -22,6 +22,9 @@ a {
 .headline i {
   font-size: 18px;
 }
+.headline .status-icon {
+  color: lime;
+}
 
 .navbar {
   height: 100%;

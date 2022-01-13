@@ -33,11 +33,6 @@
         <button type="submit" class="">Save</button>
     </div>
 </div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-new-device">
-    Launch demo modal
-</button>
-
 <!-- Modal -->
 <div class="modal fade" id="create-new-device" tabindex="-1" aria-labelledby="create-new-device" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
