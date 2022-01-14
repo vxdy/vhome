@@ -1,5 +1,6 @@
+import flask as fs
 from flask import Flask
-
+import time
 from modules import *
 
 app = Flask(__name__)
@@ -45,13 +46,18 @@ def device():
 
 @app.route('/api/powerplug', methods=['GET'])
 def powerplug():
+    # http://192.168.178.73:8888/api/powerplug?toggle=1&devicename=Tasmota1
     if request.args.get("toggle") != "" and request.args.get("devicename") != "":
         with open("conf/device.json", "r") as jsonfile:
             data = json.load(jsonfile)
-            strState = toggleplug(data[request.args.get("devicename")]["ipadress"])
-            data[request.args.get("devicename")]["state"] = strState
+            strState = toggleplug(data[request.args.get("devicename")]["ip"])
+            data[request.args.get("devicename")]["state"] = json.loads(strState)["POWER"]
             with open("conf/device.json", "w") as file:
-                json.dump(file, data)
+                print(strState)
+                json.dump(data, file)
+        resp = fs.Response(strState)
+        resp.headers['Access-Control-Allow-Origin'] = '*'
+        return resp
 
 
 if __name__ == '__main__':

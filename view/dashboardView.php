@@ -52,6 +52,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="load-widget-door-sensor"></div>
+                    <div class="load-widget-toggle"></div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": 9.9361,
+    "lat": 49.7878
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 272.92,
+    "feels_like": 271.15,
+    "temp_min": 270.04,
+    "temp_max": 275.54,
+    "pressure": 1036,
+    "humidity": 85,
+    "sea_level": 1036,
+    "grnd_level": 1012
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.49,
+    "deg": 246,
+    "gust": 1.41
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1642145845,
+  "sys": {
+    "type": 2,
+    "id": 2043313,
+    "country": "DE",
+    "sunrise": 1642144368,
+    "sunset": 1642175115
+  },
+  "timezone": 3600,
+  "id": 2805615,
+  "name": "Wurzburg",
+  "cod": 200
+}

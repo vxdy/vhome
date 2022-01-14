@@ -13,10 +13,11 @@ class DevicesController
     public function verarbeiteDaten(): void
     {
         if(isset($_POST['device-name'])){
-            $objDeviceList = json_decode(file_get_contents("python-api/conf/device.json"), true, 512, JSON_THROW_ON_ERROR);
+            $objDeviceList = json_decode(file_get_contents(NODEIP.'api/device'), true, 512, JSON_THROW_ON_ERROR);
             $objDeviceList[$_POST['device-name']]["name"] = $_POST['device-name'];
             $objDeviceList[$_POST['device-name']]["id"] = 2;
             $objDeviceList[$_POST['device-name']]["type"] = $_POST['device-type'];
+            $objDeviceList[$_POST['device-name']]["ip"] = $_POST['ip-addr'];
             $objDeviceList[$_POST['device-name']]["state"] = null;
             $objDeviceList[$_POST['device-name']]["update"] = 0;
 

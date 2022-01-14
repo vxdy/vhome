@@ -17,13 +17,10 @@ $strController = str_replace($strProjektOhneRoot, '', $_SERVER['REQUEST_URI']);
 
 $strControllerName = explode("?", ltrim($strController, '/'))[0];
 
-if($strControllerName === '')
-{
+if ($strControllerName === '') {
     $strController = 'IndexController';
     define("ACTIVE", "index");
-}
-else
-{
+} else {
     $strController = ucfirst($strControllerName) . 'Controller';
     define("ACTIVE", $strControllerName);
 }
@@ -33,14 +30,14 @@ $strControllerClass = 'controller\\' . $strController;
 $strControllerClass = str_replace('/', '\\', $strControllerClass);
 
 session_start();
-if(class_exists($strControllerClass))
-{
+
+const NODEIP = "http://46.87.171.138:8888/";
+
+if (class_exists($strControllerClass)) {
 
     $objController = new $strControllerClass();
 
-}
-else
-{
+} else {
     //Controller wurde nicht gefunden
     $objController = new IndexController();
     //$objController = new ErrorController();

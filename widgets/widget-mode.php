@@ -10,7 +10,7 @@
         </div>
         <div class="widget-content">
             <div class="widget-value">
-                <span>Zuhause</span>
+                <span>Zuhause <i class="fa-duotone fa-shield-minus"></i></span>
             </div>
         </div>
     </div>

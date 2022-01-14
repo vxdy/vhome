@@ -41,8 +41,8 @@ def setcolor():
 
 def toggleplug(adress):
     adress = f"http://{adress}/cm?cmnd=Power%20TOGGLE"
-    requests.put(
+    strAnswer = requests.get(
         adress
     )
-    # TODO Check, what Return of State and give it back
-    return json.dumps({'status': 200})
+    print(strAnswer)
+    return strAnswer.text

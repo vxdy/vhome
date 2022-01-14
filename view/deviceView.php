@@ -54,6 +54,14 @@
                         </div>
                         <div class="row setting-row">
                             <div class=" col-3 input-label">
+                                IP:
+                            </div>
+                            <div class="col-9">
+                                <input type="text" name="ip-addr">
+                            </div>
+                        </div>
+                        <div class="row setting-row">
+                            <div class=" col-3 input-label">
                                 Typ:
                             </div>
                             <div class="col-9">
@@ -74,3 +82,4 @@
         </div>
     </div>
 </div>
+<script src="js/devices.js"></script>
