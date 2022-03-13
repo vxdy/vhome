@@ -1,1 +1,39 @@
-{"home": {"id": 2, "name": "home", "state": null, "type": "contact-sensor", "update": 0}, "test": {"id": 2, "name": "test", "state": "Geschlossen", "type": "contact-sensor", "update": 1642111675}, "test2": {"id": 2, "name": "test2", "state": null, "type": "contact-sensor", "update": 0}, "Tasmota1": {"name": "Tasmota1", "id": 2, "type": "smartplug-tasmota", "ip": "192.168.178.75", "state": "OFF"}}
+{
+  "Tasmota1": {
+    "id": 2,
+    "ip": "192.168.178.75",
+    "name": "Tasmota1",
+    "state": "ON",
+    "type": "smartplug-tasmota"
+  },
+  "home": {
+    "id": 2,
+    "name": "home",
+    "state": null,
+    "type": "contact-sensor",
+    "update": 0
+  },
+  "test": {
+    "id": 2,
+    "name": "test",
+    "state": "Offen",
+    "type": "contact-sensor",
+    "update": 1642422829
+  },
+  "test2": {
+    "id": 2,
+    "name": "test2",
+    "state": null,
+    "type": "contact-sensor",
+    "update": 0
+  },
+  "temp1": {
+    "name": "temp1",
+    "id": 2,
+    "type": "temp-sensor",
+    "ip": "",
+    "state": null,
+    "update": 1643827170,
+    "temp": "16.00"
+  }
+}

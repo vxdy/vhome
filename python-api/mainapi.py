@@ -1,3 +1,5 @@
+import json
+
 import flask as fs
 from flask import Flask
 import time
@@ -41,7 +43,9 @@ def door():
 def device():
     with open("conf/device.json", "r") as jsonfile:
         data = json.load(jsonfile)
-        return data
+        resp = fs.Response(json.dumps(data))
+        resp.headers['Access-Control-Allow-Origin'] = '*'
+        return resp
 
 
 @app.route('/api/powerplug', methods=['GET'])

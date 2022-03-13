@@ -51,8 +51,8 @@
             <!-- Col1 -->
             <div class="row">
                 <div class="col-12">
-                    <div class="load-widget-door-sensor"></div>
-                    <div class="load-widget-toggle"></div>
+                    <?php //include "widgets/widget-door-sensor.php" ?>
+                    <?php //include "widgets/widget-toggle.php" ?>
                 </div>
             </div>
         </div>

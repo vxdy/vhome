@@ -31,7 +31,7 @@ $strControllerClass = str_replace('/', '\\', $strControllerClass);
 
 session_start();
 
-const NODEIP = "http://46.87.171.138:8888/";
+const NODEIP = "http://0lafdy9gi48ei64q.myfritz.net:8888/";
 
 if (class_exists($strControllerClass)) {
 

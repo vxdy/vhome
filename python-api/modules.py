@@ -46,3 +46,12 @@ def toggleplug(adress):
     )
     print(strAnswer)
     return strAnswer.text
+
+
+def plugstate(adress):
+    adress = f"http://{adress}/cm?cmnd=Power%20TOGGLE"
+    strAnswer = requests.get(
+        adress
+    )
+    print(strAnswer)
+    return strAnswer.text
